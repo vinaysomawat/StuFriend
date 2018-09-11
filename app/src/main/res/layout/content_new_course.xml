@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vinaysomawat.studentfriend.new_course"
+    tools:showIn="@layout/activity_new_course">
+
+
+    <TextView
+        android:id="@+id/new_course_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:text="Course"
+        app:layout_constraintEnd_toStartOf="@+id/new_course_name"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter Course Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Time"
+        app:layout_constraintBottom_toTopOf="@+id/new_course_button"
+        app:layout_constraintEnd_toStartOf="@+id/new_course_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_course_text_view"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <TextView
+        android:id="@+id/new_bunk_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Bunks"
+        app:layout_constraintBottom_toTopOf="@+id/new_course_button"
+        app:layout_constraintEnd_toStartOf="@+id/new_course_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_course_text_view"
+        app:layout_constraintVertical_bias="0.799" />
+    <EditText
+        android:id="@+id/new_course_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Lecture Time(hrs)"
+        app:layout_constraintBottom_toTopOf="@+id/new_course_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_course_name"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <EditText
+        android:id="@+id/new_bunk_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Bunks Count"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/new_course_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_course_name"
+        app:layout_constraintVertical_bias="0.847" />
+    <Button
+        android:id="@+id/new_course_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Add Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
